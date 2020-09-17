@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learn.sharding.jdbc.mapper.WechatUserMapper">
+  <resultMap id="BaseResultMap" type="com.learn.sharding.jdbc.model.WechatUser">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="openid" jdbcType="VARCHAR" property="openid" />
+    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, openid, avatar, nickname
+  </sql>
+</mapper>
